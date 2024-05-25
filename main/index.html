@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поздравление</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="greetButton">Поздравить</button>
+        <div id="greetMessage" class="message"></div>
+    </div>
+    <script>
+        document.getElementById('greetButton').addEventListener('click', function() {
+            document.getElementById('greetMessage').textContent = 'С днём защиты детей!';
+        });
+    </script>
+</body>
+</html>
